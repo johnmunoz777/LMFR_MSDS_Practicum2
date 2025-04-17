@@ -1,0 +1,12 @@
+names:
+  - dad
+  - giuliana
+  - maite
+  - ron
+  - tom
+  - vilma
+  - will
+nc: 7
+train: my_data_split/train/images
+val: my_data_split/valid/images
+test: my_data_split/test/images
