@@ -20,10 +20,12 @@ The goal is to eliminate long wait times by allowing members to gain access seam
   <!-- Duplicate or add more <figure> blocks here for a full 3×3 grid -->
 </div>
 <br>
-Found Pexels.com <br>
-<br>
-## Project Proposal  
-To solve this problem, I developed a real-time face recognition system using computer vision.<br>
-In [Practicum 1](https://github.com/johnmunoz777/LMFD_MSDS_Practicum) I built a YOLOv8 face recognition model.<br>
-The purpose of Practicum 2 was to deploy this model so anyone can add themselves to it and  
-employees can validate members in real time via a webcam on our website: [Face Detection Demo](https://facedetectiondemo.com)
+Found on Pexels.com  
+
+## Project Proposal
+
+To solve this problem, I developed a real-time face recognition system using computer vision.  
+In [Practicum 1: YOLOv8 Model](https://github.com/johnmunoz777/LMFD_MSDS_Practicum) I built the initial face recognition model.  
+The purpose of [Practicum 2: Deployment Demo](https://facedetectiondemo.com/) was to deploy this model so anyone can add themselves to it and  
+employees can validate members in real time via webcam.
+
