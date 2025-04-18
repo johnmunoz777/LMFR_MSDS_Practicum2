@@ -3,24 +3,21 @@
 The purpose of this project is to develop a more efficient way to verify memberships and grant access to members without unnecessary delays. <br>
 This issue exists in places like Costco, sporting events, and other venues where long queues form just to validate entry credentials.<br>
 The goal is to eliminate long wait times by allowing members to gain access seamlessly through facial recognition, reducing the need for manual verification
-
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; justify-items: center; align-items: start;">
-
+<!-- 3‑column CSS grid. Fill in as many <figure> blocks as you have images. -->
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; justify-items: center;">
   <figure style="margin: 0; text-align: center;">
-    <img src="images/costco_use.png" alt="Costco entrance" width="200" height="200" />
-    <figcaption style="font-size: 0.75em; color: #666;">Found on Pexels.com • 200×200 px</figcaption>
+    <img src="images/costco_use.png" alt="Members Example 1" width="200" height="200" />
+    <figcaption style="font-size: 0.75em; color: #555;">Found Pexels.com px</figcaption>
   </figure>
-
   <figure style="margin: 0; text-align: center;">
-    <img src="images/costco_use_two.jpg" alt="Members checking in" width="200" height="200" />
-    <figcaption style="font-size: 0.75em; color: #666;">Found on Pexels.com • 200×200 px</figcaption>
+    <img src="images/costco_use_two.jpg" alt="Members Example 2" width="200" height="200" />
+    <figcaption style="font-size: 0.75em; color: #555;">Found Pexels.compx</figcaption>
   </figure>
-
   <figure style="margin: 0; text-align: center;">
-    <img src="images/costco_use_three.jpg" alt="Queue at doorway" width="200" height="200" />
-    <figcaption style="font-size: 0.75em; color: #666;">Found on Pexels.com • 200×200 px</figcaption>
+    <img src="images/costco_use_three.jpg" alt="Members Example 3" width="200" height="200" />
+    <figcaption style="font-size: 0.75em; color: #555;">Found on Pexels.com px</figcaption>
   </figure>
-
+  <!-- Duplicate or add more <figure> blocks here for a full 3×3 grid -->
 </div>
 
 ## Project Proposal  
