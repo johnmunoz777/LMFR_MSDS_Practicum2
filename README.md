@@ -33,9 +33,9 @@ and employees can validate members in real time via a webcam on our website:[Pra
 <br>
 
 <!-- Image 2 -->
-<img src="images/phone.jpg" alt="Project" width="600" height="600" />
+<img src="images/phone.jpg" alt="Project" width="600" height="500" />
 <br>
 
 
 
-<img src="images/phoneview.jpg" alt="Project" width="600" height="600" />
+<img src="images/phoneview.jpg" alt="Project" width="600" height="500" />
