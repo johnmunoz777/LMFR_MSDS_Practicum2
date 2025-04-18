@@ -4,19 +4,23 @@ The purpose of this project is to develop a more efficient way to verify members
 This issue exists in places like Costco, sporting events, and other venues where long queues form just to validate entry credentials.<br>
 The goal is to eliminate long wait times by allowing members to gain access seamlessly through facial recognition, reducing the need for manual verification
 
-<div style="display: flex; gap: 1rem; align-items: flex-start;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; justify-items: center; align-items: start;">
+
   <figure style="margin: 0; text-align: center;">
-    <img src="images/costco_use.png" alt="Members Example 1" width="300" height="200" />
-    <figcaption style="font-size: 0.75em; color: #555;">Found on Pexels.com</figcaption>
+    <img src="images/costco_use.png" alt="Costco entrance" width="200" height="200" />
+    <figcaption style="font-size: 0.75em; color: #666;">Found on Pexels.com • 200×200 px</figcaption>
   </figure>
+
   <figure style="margin: 0; text-align: center;">
-    <img src="images/costco_use_two.jpg" alt="Members Example 2" width="300" height="200" />
-    <figcaption style="font-size: 0.75em; color: #555;">Found on Pexels.com</figcaption>
+    <img src="images/costco_use_two.jpg" alt="Members checking in" width="200" height="200" />
+    <figcaption style="font-size: 0.75em; color: #666;">Found on Pexels.com • 200×200 px</figcaption>
   </figure>
+
   <figure style="margin: 0; text-align: center;">
-    <img src="images/costco_use_three.jpg" alt="Members Example 3" width="300" height="200" />
-    <figcaption style="font-size: 0.75em; color: #555;">Found on Pexels.com</figcaption>
+    <img src="images/costco_use_three.jpg" alt="Queue at doorway" width="200" height="200" />
+    <figcaption style="font-size: 0.75em; color: #666;">Found on Pexels.com • 200×200 px</figcaption>
   </figure>
+
 </div>
 
 ## Project Proposal  
