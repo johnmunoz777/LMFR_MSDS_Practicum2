@@ -33,9 +33,9 @@ employees can validate members in real time via webcam.
 <br>
 
 <!-- Image 2 -->
-<img src="images/Phone.jpg" alt="Project" width="400" height="400" />
+<img src="images/phone.jpg" alt="Project" width="400" height="400" />
 <br>
 
 
 
-<img src="images/Phoneview.jpg" alt="Project" width="400" height="400" />
+<img src="images/phoneview.jpg" alt="Project" width="400" height="400" />
