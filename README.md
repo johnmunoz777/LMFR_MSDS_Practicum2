@@ -376,10 +376,8 @@ This solution provides a secure, branded web portal (`facedetectiondemo.com`) wh
 
 ## Static Page Deployment  
 - Added an `index.html` under `pages/` for `facedetectiondemo.com`.  
-- This page hosts a “Start Webcam” button that connects users to the live face‑recognition app.
-- 
-<img src="images/phone.jpg" alt="Project" width="700" height="400" />
-
+- This page hosts a “Start Webcam” button that connects users to the live face‑recognition app. <br>
+![g](images/phone.jpg) <br>
 ## 1. Create Tunnel  
 Set up a Cloudflare Tunnel named `face-detect-tunnel` to securely expose your local server. <br>
 
