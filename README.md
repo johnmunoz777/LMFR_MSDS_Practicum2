@@ -253,7 +253,7 @@ The structure is as follows <br>
 * In addition, the SQL database is updated with the individuals name & Variables
 * If a user wants to edit or delte themself they can hit the delete button
   
-<img src="images/add_member.jpg" alt="Project" width="700" height="400" />
+![alt text](images/add_member.jpg)
 
 <img src="images/update_yaml.jpg" alt="Project" width="700" height="400" />
 
