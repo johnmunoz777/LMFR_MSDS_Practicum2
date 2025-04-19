@@ -229,7 +229,7 @@ Toggle Use GPU to On.<br>
 Click Save and wait for the container to rebuild with GPU suppor<br>
 <img src="images/gpu_needed.jpg" alt="Project" width="700" height="400" />
 
-<img src="images/my_space.jpg" alt="Project" width="700" height="400" />
+![g](images/my_space.jpg)
 
 ### Hugging Face Space
 
@@ -360,7 +360,7 @@ After the User creates their images the next step is to build the model:
 
 <img src="images/preds_webcam.jpg" alt="Project" width="700" height="400" />
 
-![g](images/g_results_video.gif)
+<img src="images/g_results_video.gif" alt="Project" width="700" height="600" />
 
 ### Face Detect Website
 ### Face Detection Demo Deployment
