@@ -367,7 +367,7 @@ After the User creates their images the next step is to build the model:
 * Overview:
 This solution provides a secure, branded web portal (`facedetectiondemo.com`) where employees simply click “Start Webcam” to engage real‑time face recognition. Behind the scenes, a Cloudflare Tunnel protects your infrastructure, a lightweight Flask service runs the AI model on GPU, and a volunteer database ensures only authorized users are recognized. No client‑side installations are needed—just a browser—making it easy for non‑technical staff to use.
 
-<img src="images/facedetewebsite_results_two.gif" alt="Project" width="700" height="600" /><br>
+<img src="images/facedetewebsite_results_two.gif" alt="Project" width="900" height="700" /><br>
 
 # Setting up Face Detection Website
 ## Domain & DNS Setup  
