@@ -395,7 +395,7 @@ Monitor tunnel logs to confirm incoming requests are routed correctly.<br>
 <img src="images/tunnel_process.jpg" alt="Project" width="700" height="400" /><br>
 ## 6. Tunnel Configuration    
 Your `.cloudflared/config.yaml` defines tunnel credentials and maps `/*` to `http://localhost:5000`.<br>
-<img src="images/tunnel_config.jpg" alt="Project" width="700" height="400" /><br>
+<img src="images/tunnel_config.jpg" alt="Project" width="700" height="600" /><br>
 ## 7. Run the Tunnel  <br>
 Keep the tunnel running continuously so employees can access the site at any time.<br>
 ![g](images/r_tunnel.jpg) <br>
