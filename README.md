@@ -104,7 +104,7 @@ nc: 14
 names: ['angela', 'classmate', 'giuliana', 'javier', 'john', 'maite', 'mike', 'ron', 'shanti', 'tom', 'vilma', 'will','Kevin','Shirley']
 ```
 
-<img src="images/g_doc.jpg" alt="john Example" width="400" height="400" />
+<img src="images/g_doc.jpg" alt="john Example" width="800" height="400" />
 
 ### Building the YOLO Model
 I used the Ultralytics package to build the Yolo v8 model <br>
