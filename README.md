@@ -405,4 +405,43 @@ Once everything is running, employees visit **https://facedetectiondemo.com**, c
 
 <img src="images/phoneview.jpg" alt="Project" width="700" height="600" /><br>
 
+### File Information
+# 📁 Project Structure
+
+This repository is organized by functionality to streamline development, deployment, and maintenance.
+
+## 🖼️ Data & Assets
+- **`my_data_split/`**  
+  Contains training images and their labels for model fine‑tuning.  
+- **`images/`**  
+  Static images for documentation and UI (e.g., example screenshots).
+
+## 🚀 App Deployment (Hugging Face Space)
+- **`app.py`**  
+  Streamlit application entry point for deploying on Hugging Face Space.  
+- **`requirements.txt`**  
+  Python packages required by the app.  
+- **`packages.txt`**  
+  System‑level dependencies for container builds.
+
+## 🤖 YOLO Model
+- **`best.pt`**  
+  Trained YOLOv8 weights for real‑time face detection and recognition.  
+- **`new_data.yaml`**  
+  YOLO data configuration file (paths, class names, etc.).  
+- **`yolo_split_pipeline.py`**  
+  Script to extract frames from videos and organize them into training folders.
+
+## 🗃️ Database
+- **`capstone.db`**  
+  SQLite database file defining and storing the `members` table.  
+- **`sql_table.py`**  
+  Module for creating the table and performing CRUD operations on `members`.
+
+## 📦 Web App for FaceDetectionDemo.com
+- **`index.html`**  
+  Static landing page for the FaceDetectionDemo.com website.  
+- **`new_model.py`**  
+  Flask application configured for GPU inference and model serving.
+
 
