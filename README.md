@@ -45,7 +45,7 @@ This system leverages an sqlite members database, OpenCV, YOLO for object detect
 By implementing this solution, venues such as Costco and retail stores can have frictionless, secure, and efficient entry for their members.
 
 
-<img src="images/final_chats.png" alt="john Example" width="950" height="600" /> <br>
+<img src="images/cc.jpg" alt="john Example" width="950" height="600" /> <br>
 <img src="images/flowchart_hugging_face.png" alt="john Example" width="1000" height="600" />
 <br>
 <img src="images/tunnel_process.jpg" alt="Project" width="700" height="600" />
