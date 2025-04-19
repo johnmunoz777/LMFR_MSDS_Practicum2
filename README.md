@@ -155,3 +155,254 @@ The following shows training images for both models
 <br>
 
 ### Setting Up Hugging Face Space
+
+## Hugging Face Space Setup Guide
+
+## 1. Account Setup
+1. Go to [Hugging Face](https://huggingface.co/) and **Sign Up** or **Log In**.  
+2. Verify your email address if prompted.
+
+<img src="images/create_space_one.jpg" alt="Project" width="700" height="400" />
+
+## 2. Create a New Space
+1. Navigate to **Spaces** (top menu or https://huggingface.co/spaces).  
+2. Click **Create new Space**.  
+3. **Name** your Space: `johnmunoz/face-recognition-demo`.  
+4. **Select SDK** → **Streamlit**.  
+5. **Hardware** → leave as **CPU (Basic)** (you can switch to GPU later).
+
+<img src="images/create_space.jpg" alt="Project" width="700" height="400" />
+
+## 3. Prepare Your Project Files
+In a local folder named `hugging_face_space/`, create and populate:
+
+```text
+hugging_face_space/
+├── weights/             # model weights (.pt, .onnx)
+├── streamlit_model.py   # Streamlit app entrypoint
+├── requirements.txt     # Python dependencies
+└── database/            # (Optional) database files or folders
+```
+
+<img src="images/info_needed_for_space.jpg" alt="Project" width="700" height="400" />
+
+## 4. Install & Authenticate the Hugging Face CLI
+* 4.1 Install the CLI
+pip install huggingface_hub
+* 4.2 Login with your token
+huggingface-cli login
+# → Paste your access token when prompted <br>
+
+
+## 5. Push Your Code to the Space
+* Clone the (empty) Space repo <br>
+git clone https://huggingface.co/spaces/johnmunoz/face-recognition-demo <br>
+cd face-recognition-demo  <br>
+* 5.2 Copy your local files into the repo
+* cp -r ../hugging_face_space/* .
+
+* 5.3 Commit and push
+git add .  <br>
+git commit -m "Initial commit: Streamlit app, weights, requirements"  <br>
+git push <br>
+<img src="images/git_push.jpg" alt="Project" width="700" height="400" />
+## 6. Configure Twilio & Environment Variables
+Sign up or log in at Twilio.<br>
+Create a new API Key (you will get an Account SID and Auth Token).<br>
+In your Space on Hugging Face:<br>
+Go to Settings → Environment variables.Add <br>
+TWILIO_ACCOUNT_SID = <your Account SID><br>
+TWILIO_AUTH_TOKEN  = <your Auth Token><br>
+
+<br>
+
+
+<img src="images/space_img.jpg" alt="Project" width="700" height="400" />
+
+## 7. Deployment & GPU Enablement
+After you git push, the Space will auto‑build and deploy your Streamlit app.<br>
+To enable GPU (for faster inference or webcam streaming):<br>
+In the Space, open Settings → Hardware.<br>
+Toggle Use GPU to On.<br>
+Click Save and wait for the container to rebuild with GPU suppor<br>
+<img src="images/gpu_needed.jpg" alt="Project" width="700" height="400" />
+
+<img src="images/my_space.jpg" alt="Project" width="700" height="400" />
+
+### Hugging Face Space
+
+The Space for the Project is located at [Hugging Face Space – johngmunoz/face](https://huggingface.co/spaces/johngmunoz/face)  <br>
+In this Space, anyone can add themselves to the Members Database and perform face recognition using either a webcam or by uploading a video. <br>
+Due to Cost issues its running on a CPU, but a GPU can be enabled for faster detection and model creation <br>
+The Space Starts with the Small Yolo Model | Model Weights| Members Database | image_folder & add the .yaml files <br>
+The structure is as follows <br>
+📂 **Hugging Face Space – johngmunoz/face** <br>
+├─ ➕ **Add Member**  
+├─ 🖼️ **Add Images**  
+├─ 🛠️ **Build Model**  
+├─ 📹 **Prediction (Webcam)**  
+└─ 📤 **Prediction (Upload Video)**
+
+# 1. Add a New Member
+* Any individual can add themself to the project
+* A new user will fill out the required fields 
+* Once filled out the user hits Submit
+* Once they hit submit the .yaml file is updated with the person's name and # of classes
+* In addition, the SQL database is updated with the individuals name & Variables
+* If a user wants to edit or delte themself they can hit the delete button
+  
+<img src="images/add_member.jpg" alt="Project" width="700" height="400" />
+
+<img src="images/update_yaml.jpg" alt="Project" width="700" height="400" />
+
+# 2. Add Images
+- The next step is to use a webcam to extract still frames
+- By default, 150 images will be collected.  
+- All photos are saved in a temporary folder at `face_dataset/person_<name>`.  
+- To clear and retake images, click the **Reset Face Dataset** button.  
+
+
+
+<img src="images/hug_two.jpg" alt="Project" width="700" height="400" />
+
+<img src="images/collect_images_two.gif" alt="Project" width="700" height="400" />
+
+## 3. Build Model
+
+After the User creates their images the next step is to build the model:
+
+1. **Organize the images**  
+   All photos from `face_dataset/person_<name>` are automatically split into training, validation, and test sets.
+
+2. **Update the configuration**  
+   The system rewrites `new_data.yaml` to point at those three folders, sets the total number of members (classes), and lists their names.
+
+3. **Clean up temporary files**  
+   The original `face_dataset` folder is deleted to free up storage.
+
+4. **Train the YOLO detector**  
+   Using the updated YAML, a new model is trained for a fixed number of rounds, with earlier layers optionally frozen for faster convergence.
+
+5. **Save the new weights**  
+   The freshly trained weights are saved under a descriptive name (e.g. `person_<name>.pt`), and the cumulative weights file (`new_person_detect.pt`) is updated. The intermediate training weights are then removed.
+
+6. **Archive previous outputs**  
+   Any existing `runs` folder is moved into `old_run` so your workspace stays clean for the next training cycle.
+
+<img src="images/build_model.jpg" alt="Project" width="700" height="400" />
+
+<img src="images/building_model.jpg" alt="Project" width="700" height="400" />
+
+<img src="images/model_results.jpg" alt="Project" width="700" height="400" />
+
+
+## 4 Predication Webcam
+1. **Start the live feed**  
+   - Switch to the “Prediction (Webcam)” tab and click the webcam button to begin streaming.
+
+2. **Load the latest model**  
+   - The app automatically loads your most recent `new_person_detect.pt` weights for detection.
+
+3. **Detect faces in real time**  
+   - Each video frame is passed through the YOLO detector.
+   - When a face is found, the app checks your Members Database:
+     - **Green box** for recognized (active) members  
+     - **Red box** for unrecognized or inactive faces  
+
+4. **Show confidence and member info**  
+   - Confidence scores (as percentages) appear next to each box.  
+   - Selected member fields (from the sidebar) are displayed beneath the detection.
+
+5. **Fine‑tune display settings**  
+   - Use the sidebar sliders to adjust:
+     - **Confidence Threshold** – ignore low‑confidence detections  
+     - **Font Scale & Text Thickness** – control label size  
+     - **Line Height** – set spacing for member details  
+
+6. **Stop and review results**  
+   - Click “Show Results” after ending the stream to see:
+     - A summary table of detections by person  
+     - The highest‐frequency detection highlighted  
+     - An annotated image of the top detection  
+   - Download the table (CSV) and image for your records.
+
+
+
+<img src="images/website_intro.gif" alt="Project" width="700" height="400" />
+
+<img src="images/table_results_pic_hugging.jpg" alt="Project" width="700" height="400" />
+
+<img src="images/results_table_hugging.jpg" alt="Project" width="700" height="400" />
+
+## 5. Prediction (Upload Video)
+
+1. **Upload your video**  
+   - Click the **Upload Video** button and select an MP4, MOV, or AVI file.
+
+2. **Configure processing options**  
+   - **Rotate Video**: Choose to rotate or flip the footage.  
+   - **Adjust Scale**: Use the slider to zoom in/out on the preview.  
+   - **Output Width & Height**: Enter your desired resolution for the processed file.  
+   - **Sidebar Controls**: Tweak the **Confidence Threshold**, **Font Scale**, **Text Thickness**, and **Line Height** to refine detections.
+
+3. **Run detection**  
+   - Hit **Process Video** to analyze each frame with the latest model.  
+   - Faces are boxed (green for known members, red for unknown) and labeled with names and confidence scores.
+
+4. **Review results**  
+   - A summary table lists each person’s detection count, confidence percentages, and status.  
+   - Download this table as a CSV for your records.
+
+5. **Save your video**  
+   - When processing finishes, click **Download Processed Video** to get the annotated file.
+
+<img src="images/preds_webcam.jpg" alt="Project" width="700" height="400" />
+
+![g](images/g_results_video.gif)
+
+### Face Detect Website
+### Face Detection Demo Deployment
+* Overview:
+This solution provides a secure, branded web portal (`facedetectiondemo.com`) where employees simply click “Start Webcam” to engage real‑time face recognition. Behind the scenes, a Cloudflare Tunnel protects your infrastructure, a lightweight Flask service runs the AI model on GPU, and a volunteer database ensures only authorized users are recognized. No client‑side installations are needed—just a browser—making it easy for non‑technical staff to use.
+
+<img src="images/facedetewebsite_results_two.gif" alt="Project" width="700" height="600" /><br>
+
+# Setting up Face Detection Website
+## Domain & DNS Setup  
+- **Domain**: Purchased `facedetectiondemo.com`.  
+- **DNS**: Pointed a CNAME (or A) record at `tunnel.cloudflare.com` per Cloudflare instructions.
+
+## Static Page Deployment  
+- Added an `index.html` under `pages/` for `facedetectiondemo.com`.  
+- This page hosts a “Start Webcam” button that connects users to the live face‑recognition app.
+- 
+<img src="images/phone.jpg" alt="Project" width="700" height="400" />
+
+## 1. Create Tunnel  
+Set up a Cloudflare Tunnel named `face-detect-tunnel` to securely expose your local server. <br>
+
+## 2. Start Flask Server  
+Run the Flask app on your machine. It loads the YOLO model on GPU (if available) and uses an SQLite database for volunteer profiles. <br>
+![g](images/new_tunnel.jpg)
+## 3. App Interface  
+The web UI shows a live webcam feed with colored bounding boxes, confidence scores, and profile details.<br>
+![g](images/flask_app_view.jpg)
+## 4. Start Tunnel   
+Launch the tunnel to forward public traffic from `facedetectiondemo.com` to your local Flask server.<br>
+![g](images/s_tunnel.jpg)
+## 5. Tunnel Process  <br>
+Monitor tunnel logs to confirm incoming requests are routed correctly.<br>
+<img src="images/tunnel_process.jpg" alt="Project" width="700" height="400" /><br>
+## 6. Tunnel Configuration    
+Your `.cloudflared/config.yaml` defines tunnel credentials and maps `/*` to `http://localhost:5000`.<br>
+<img src="images/tunnel_config.jpg" alt="Project" width="700" height="400" /><br>
+## 7. Run the Tunnel  <br>
+Keep the tunnel running continuously so employees can access the site at any time.<br>
+![g](images/r_tunnel.jpg) <br>
+Once everything is running, employees visit **https://facedetectiondemo.com**, click the button, and see real‑time face recognition powered by your YOLO model and volunteer database.
+
+<img src="images/face_det_results_two.gif" alt="Project" width="700" height="400" /><br>
+
+<img src="images/phoneview.jpg" alt="Project" width="700" height="600" /><br>
+
+
