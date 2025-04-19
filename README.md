@@ -59,3 +59,56 @@ By implementing this solution, venues such as Costco and retail stores can have 
 
 
 ### Yolo Model Comparison
+
+### Models Trained
+I developed two final models for my project. <br>
+* Large Yolo Model- this Model contained 14 individuals and had on average around 300 images per class
+* Small Yolo Model- this Model contained 7 individuals which had had on average around 100 images per class
+
+# Prepare Yolo Data Large Model Example
+
+To prepare the images for the YOLO v8 object detection model, I used OpenCV to detect faces within the images. Specifically, I employed the Haar Cascade classifier with the haarcascade_frontalface , an algorithm widely used for object detection, especially for faces. Once a face was detected, I generated a `.txt` file containing the volunteer's ID, the `x_center`, `y_center`, `width`, and `height` of the detected face.
+
+I created a Python function that:
+
+- Splits the images into training, validation, and test sets according to specified split ratios.
+- Generates YOLO-formatted `.txt` annotation files for each image by detecting faces.
+- Copies both the images and annotation files into their corresponding output folders.
+- Finaly, data.yaml file linked the path,train,validation, number_of_classes
+
+The folder structure for the output is as follows:
+```bash
+output_base/
+    ├── train/
+    │   ├── images/
+    │   └── labels/
+    ├── valid/
+    │   ├── images/
+    │   └── labels/
+    └── test/
+        ├── images/
+        └── labels/
+
+        
+```
+# Dataset Paths and Configuration
+* This is an Example of how I setup the Large Yolo Model
+* The Large Yolo Model had 14 individuals in contrast the Small Yolo Model contained 7 Individuals
+
+```yaml
+path: /content/drive/MyDrive/capstone project/my_data_split
+train: /content/drive/MyDrive/capstone project/my_data_split/train/images
+val: /content/drive/MyDrive/capstone project/my_data_split/val/images
+test: /content/drive/MyDrive/capstone project/my_data_split/test/images
+nc: 14
+names: ['angela', 'classmate', 'giuliana', 'javier', 'john', 'maite', 'mike', 'ron', 'shanti', 'tom', 'vilma', 'will','Kevin','Shirley']
+```
+
+<img src="images/g_doc.png" alt="john Example" width="400" height="400" />
+
+### Building the YOLO Model
+I used the Ultralytics package to build the Yolo v8 model <br>
+`!yolo task=detect mode=train model=yolov8l.pt data="/content/drive/MyDrive/capstone project/data.yaml" epochs=50 imgsz=640`
+![rs](images/yolo_results.jpg)
+- Overall Model Performance
+
