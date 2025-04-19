@@ -48,3 +48,14 @@ By implementing this solution, venues such as Costco and retail stores can have 
 <br>
 <img src="images/tunnel_process.jpg" alt="Project" width="700" height="600" />
 <br>
+
+### Table of Contents  
+- [Yolo Model Comparison](#Model-Comparison)  
+- [Setting Up Hugging Face Space](#Setting-Up-Hugging-Face-Space)  
+- [Hugging Face Space](#Hugging-Face-Space)  
+- [Face Detect Website](#Face-Detect-Website)
+- [File Information](#File-Information)
+- [Future Implementations](#future-implementations)
+
+
+### Yolo Model Comparison
