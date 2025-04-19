@@ -112,3 +112,46 @@ I used the Ultralytics package to build the Yolo v8 model <br>
 ![rs](images/yolo_results.jpg)
 - Overall Model Performance
 
+Large Model mAP@50: 90% → On average, the Yolo v8 model detects objects correctly 74.5% of the time at an IoU threshold of 0.50. <br>
+Small Model mAP@50: 85% → On average, the Yolo v8 model detects objects correctly 74.5% of the time at an IoU threshold of 0.50.<br>
+Large Model Precision (P): 89% → Out of all detected objects, 74% were correctly classified.  <br>
+Large Model Precision (P): 81% → Out of all detected objects, 74% were correctly classified.   <br>
+
+![rs](images/best_model.jpg)
+
+![rs](images/small_model_results.jpg)
+
+### Confuision Matrix
+- Both models achieved very similar **overall accuracy** when evaluated with their confusion matrices.  
+- Performance varied by class—some identities had higher **recall** than others.  
+- **Large model:**  
+  - Angela class **recall** was nearly perfect.  
+  - Will class **recall** was the lowest, at 68%.  
+- **Small model:**  
+  - Dad class **recall** hit 100%, though the limited sample size suggests possible overfitting.  
+  - Will class **recall** was the lowest, at 63%.
+
+<img src="images/large_model_confusion_matrix.jpg" alt="Project" width="700" height="400" />
+<br>
+
+<img src="images/small_model_confuison_model.jpg" alt="Project" width="700" height="400" />
+<br>
+
+## Model Used For Hugging Space
+Due to Hugging Face Spaces storage limits, I ultimately used the **small YOLO model**.<br>
+The following shows training images for both models 
+
+* Lare Yolo Model
+  
+<img src="images/train_one.jpg" alt="Project" width="700" height="400" />
+<br>
+
+<img src="images/train_two.jpg" alt="Project" width="700" height="400" />
+<br>
+
+* Small Yolo Model 
+
+<img src="images/small_model_train.jpg" alt="Project" width="700" height="400" />
+<br>
+
+### Setting Up Hugging Face Space
