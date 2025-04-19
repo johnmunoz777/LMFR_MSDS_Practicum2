@@ -401,9 +401,9 @@ Keep the tunnel running continuously so employees can access the site at any tim
 ![g](images/r_tunnel.jpg) <br>
 Once everything is running, employees visit **https://facedetectiondemo.com**, click the button, and see real‑time face recognition powered by your YOLO model and volunteer database.
 
-<img src="images/face_det_results_two.gif" alt="Project" width="700" height="400" /><br>
+![g](images/face_det_results_two.gif)
 
-<img src="images/phoneview.jpg" alt="Project" width="700" height="600" /><br>
+<img src="images/phoneview.jpg" alt="Project" width="900" height="600" /><br>
 
 ### File Information
 # 📁 Project Structure
