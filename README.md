@@ -39,3 +39,12 @@ and employees can validate members in real time via a webcam on our website:[Pra
 
 
 <img src="images/phoneview.jpg" alt="Project" width="600" height="500" />
+
+## System Overview
+This system leverages an sqlite members database, OpenCV, YOLO for object detection, Hugging Face Spaces for the dahsboard, Cloudflared,and Flask for the employee website <br>
+By implementing this solution, venues such as Costco and retail stores can have frictionless, secure, and efficient entry for their members.
+
+<img src="images/flowchart_hugging_face.png" alt="john Example" width="700" height="400" />
+<br>
+<img src="images/tunnel_process.jpg" alt="Project" width="700" height="600" />
+<br>
