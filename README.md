@@ -29,14 +29,16 @@ In [Practicum 1: YOLOv8 Model](https://github.com/johnmunoz777/LMFD_MSDS_Practi
 The purpose of Practicum 2 was to deploy this model so anyone can add themselves to it  <br>
 and employees can validate members in real time via a webcam on our website:[Practicum 2: Deployment Demo](https://facedetectiondemo.com/)
 
+<img src="images/use_dash.jpg" alt="john Example" width="800" height="400" />
+<br>
 <img src="images/results_hugging.gif" alt="john Example" width="800" height="400" />
 <br>
 
-<!-- Image 2 -->
+
 <img src="images/phone.jpg" alt="Project" width="600" height="500" />
 <br>
 
-
+<img src="images/use_demo.jpg" alt="Project" width="600" height="500" />
 
 <img src="images/phoneview.jpg" alt="Project" width="600" height="500" />
 
