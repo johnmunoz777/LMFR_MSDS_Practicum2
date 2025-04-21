@@ -67,7 +67,7 @@ By implementing this solution, venues such as Costco and retail stores can have 
 ### Models Trained
 I developed two final models for my project. <br>
 * Large Yolo Model- this Model contained 14 individuals and had on average around 300 images per class
-* Small Yolo Model- this Model contained 7 individuals which had had on average around 100 images per class
+* Small Yolo Model- this Model contained 7 individuals which had on average around 100 images per class
 
 # Prepare Yolo Data Large Model Example
 
