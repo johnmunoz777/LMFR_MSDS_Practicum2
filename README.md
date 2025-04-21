@@ -116,10 +116,10 @@ I used the Ultralytics package to build the Yolo v8 model <br>
 ![rs](images/yolo_results.jpg)
 - Overall Model Performance
 
-Large Model mAP@50: 90% → On average, the Yolo v8 model detects objects correctly 74.5% of the time at an IoU threshold of 0.50. <br>
-Small Model mAP@50: 85% → On average, the Yolo v8 model detects objects correctly 74.5% of the time at an IoU threshold of 0.50.<br>
-Large Model Precision (P): 89% → Out of all detected objects, 74% were correctly classified.  <br>
-Large Model Precision (P): 81% → Out of all detected objects, 74% were correctly classified.   <br>
+Large Model mAP@50: 90% → On average, the Yolo v8 model detects objects correctly 90% of the time at an IoU threshold of 0.50. <br>
+Small Model mAP@50: 85% → On average, the Yolo v8 model detects objects correctly 85% of the time at an IoU threshold of 0.50.<br>
+Large Model Precision (P): 89% → Out of all detected objects, 89% were correctly classified.  <br>
+Large Model Precision (P): 81% → Out of all detected objects, 81% were correctly classified.   <br>
 
 ![rs](images/best_model.jpg)
 
