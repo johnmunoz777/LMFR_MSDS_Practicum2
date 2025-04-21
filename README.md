@@ -180,13 +180,7 @@ The following shows training images for both models
 ## 3. Prepare Your Project Files
 In a local folder named `hugging_face_space/`, create and populate:
 
-```text
-hugging_face_space/
-├── weights/             # model weights (.pt, .onnx)
-├── streamlit_model.py   # Streamlit app entrypoint
-├── requirements.txt     # Python dependencies
-└── database/            # (Optional) database files or folders
-```
+
 
 <img src="images/info_needed_for_space.jpg" alt="Project" width="700" height="400" />
 
