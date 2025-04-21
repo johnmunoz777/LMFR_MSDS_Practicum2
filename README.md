@@ -204,7 +204,8 @@ git add .  <br>
 git commit -m "Initial commit: Streamlit app, weights, requirements"  <br>
 git push <br>
 <img src="images/git_push.jpg" alt="Project" width="700" height="400" />
-## 6. Configure Twilio & Environment Variables
+
+## 6. Configure Twilio & Environment Variables <br>
 Sign up or log in at Twilio.<br>
 Create a new API Key (you will get an Account SID and Auth Token).<br>
 In your Space on Hugging Face:<br>
