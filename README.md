@@ -371,7 +371,7 @@ This solution provides a secure, branded web portal (`facedetectiondemo.com`) wh
 # Setting up Face Detection Website
 ## Domain & DNS Setup  
 - **Domain**: Purchased `facedetectiondemo.com`.  
-- **DNS**: Pointed a CNAME (or A) record at `tunnel.cloudflare.com` per Cloudflare instructions.
+- **DNS**: Change DNS setting from domain to Cloudflared.
 
 ## Static Page Deployment  
 - Added an `index.html` under `pages/` for `facedetectiondemo.com`.  
@@ -381,7 +381,7 @@ This solution provides a secure, branded web portal (`facedetectiondemo.com`) wh
 Set up a Cloudflare Tunnel named `face-detect-tunnel` to securely expose your local server. <br>
 
 ## 2. Start Flask Server  
-Run the Flask app on your machine. It loads the YOLO model on GPU (if available) and uses an SQLite database for volunteer profiles. <br>
+Run the Flask app on your machine. It loads the YOLO model on GPU  and uses an SQLite database for members profiles. <br>
 ![g](images/new_tunnel.jpg)
 ## 3. App Interface  
 The web UI shows a live webcam feed with colored bounding boxes, confidence scores, and profile details.<br>
