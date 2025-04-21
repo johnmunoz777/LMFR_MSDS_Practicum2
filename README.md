@@ -362,7 +362,7 @@ After the User creates their images the next step is to build the model:
 ### Face Detect Website
 ### Face Detection Demo Deployment
 * Overview:
-This solution provides a secure, branded web portal (`facedetectiondemo.com`) where employees simply click “Start Webcam” to engage real‑time face recognition. Behind the scenes, a Cloudflare Tunnel protects your infrastructure, a lightweight Flask service runs the AI model on GPU, and a volunteer database ensures only authorized users are recognized. No client‑side installations are needed—just a browser—making it easy for non‑technical staff to use.
+This solution provides a secure, branded web portal (`facedetectiondemo.com`) where employees simply click “Start Webcam” to engage real‑time face recognition. Behind the scenes, a Cloudflare Tunnel protects your infrastructure, a lightweight Flask service runs the Yolo model on GPU, and a Members database ensures only authorized users are recognized.
 
 
 ![g](images/last_two.gif) <br>
