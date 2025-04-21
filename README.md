@@ -223,7 +223,7 @@ After you git push, the Space will auto‑build and deploy your Streamlit app.<b
 To enable GPU (for faster inference or webcam streaming):<br>
 In the Space, open Settings → Hardware.<br>
 Toggle Use GPU to On.<br>
-Click Save and wait for the container to rebuild with GPU suppor<br>
+Click Save and wait for the container to rebuild with GPU support<br>
 <img src="images/gpu_needed.jpg" alt="Project" width="700" height="400" />
 
 ![g](images/my_space.jpg)
