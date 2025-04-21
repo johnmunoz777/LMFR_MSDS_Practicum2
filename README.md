@@ -20,7 +20,7 @@ The goal is to eliminate long wait times by allowing members to gain access seam
   <!-- Duplicate or add more <figure> blocks here for a full 3×3 grid -->
 </div>
 <br>
-Pciture 1: Created by Chatgpt               Picture 2 Found on Pexels.com created by Pavel Danilyuk   Picture 3 Found on Pexels.com created by Tiger Lily 
+Pciture 1: Created by ChatGPT               Picture 2 Found on Pexels.com created by Pavel Danilyuk   Picture 3 Found on Pexels.com created by Tiger Lily 
 
 ## Project Proposal
 
