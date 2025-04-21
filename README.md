@@ -271,7 +271,7 @@ The structure is as follows <br>
 After the User creates their images the next step is to build the model:
 
 1. **Organize the images**  
-   All photos from `face_dataset/person_<name>` are automatically split into training, validation, and test sets.
+   All photos from `face_dataset/person_<name>` are automatically split into training, validation, and test sets using the Haar Cascade classifier and set to Yolo format.
 
 2. **Update the configuration**  
    The system rewrites `new_data.yaml` to point at those three folders, sets the total number of members (classes), and lists their names.
@@ -314,7 +314,7 @@ After the User creates their images the next step is to build the model:
 
 5. **Fine‑tune display settings**  
    - Use the sidebar sliders to adjust:
-     - **Confidence Threshold** – ignore low‑confidence detections  
+     - **Confidence Threshold** – Change Confidence Threshold
      - **Font Scale & Text Thickness** – control label size  
      - **Line Height** – set spacing for member details  
 
