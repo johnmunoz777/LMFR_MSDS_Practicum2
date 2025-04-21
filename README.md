@@ -1,6 +1,6 @@
 # Live Member Face Recognition Deployment
 ## Project Description
-The purpose of this project is to develop a more efficient way to verify memberships and grant access to members without unnecessary delays. <br>
+The purpose of this project was to develop a more efficient way to verify memberships and grant access to members without unnecessary delays. <br>
 This issue exists in places like Costco, sporting events, and other venues where long queues form just to validate entry credentials.<br>
 The goal is to eliminate long wait times by allowing members to gain access seamlessly through facial recognition, reducing the need for manual verification
 <!-- 3‑column CSS grid. Fill in as many <figure> blocks as you have images. -->
