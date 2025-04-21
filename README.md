@@ -411,7 +411,7 @@ This repository is organized by functionality to streamline development, deploym
 
 ## 🖼️ Data & Assets
 - **`my_data_split/`**  
-  Contains training images and their labels for model fine‑tuning.  
+  Contains training images and their labels for model fine‑tuning can be found at [Dropbox](https://www.dropbox.com/scl/fo/ily2ijgzmf2aim2dwcmwm/AM1GzscLEXtDuQCFMcyiY0I?rlkey=gol3hi4n9ni68ya1lf3f7vbgv&st=m7fs0re7&dl=0.)
 - **`images/`**  
   Static images for documentation and UI (e.g., example screenshots).
 
