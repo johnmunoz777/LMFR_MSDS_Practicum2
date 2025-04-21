@@ -27,7 +27,7 @@ Pciture 1: Created by ChatGPT               Picture 2 Found on Pexels.com create
 To solve this problem, I developed a real-time face recognition system using computer vision.  
 In [Practicum 1: YOLOv8 Model](https://github.com/johnmunoz777/LMFD_MSDS_Practicum) I built a YOLOv8 face recognition model.  
 The purpose of Practicum 2 was to deploy this model to Hugging Face Spaces so anyone can add themselves to the Members database, and obtain predictions from the Yolo V8 Model <br>
-Furthermore, the website [Practicum 2: Deployment Demo](https://facedetectiondemo.com/) was created so employees can validate members in real time via a webcam
+Furthermore, the website [facedetectiondemo](https://facedetectiondemo.com/) was created so employees can validate members in real time via a webcam
 
 <img src="images/use_dash.jpg" alt="john Example" width="800" height="400" />
 <br>
