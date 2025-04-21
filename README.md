@@ -443,4 +443,17 @@ This repository is organized by functionality to streamline development, deploym
 - **`new_model.py`**  
   Flask application configured for GPU inference and model serving.
 
+## Future Implementation
+
+- **Low‑Latency Webcam Streaming**  
+  Replace the Twilio-based video feed with a lightweight, real‑time solution to eliminate startup delay and deliver an instant camera view.
+
+- **Enhanced Model Accuracy**  
+  Evaluate and integrate alternative CNN architectures (e.g., EfficientNet, MobileNetV3) to boost face recognition precision and robustness.
+
+- **Persistent Member Storage**  
+  Migrate from ephemeral Hugging Face container storage to a dedicated database or object store (PostgreSQL, MongoDB, AWS S3, etc.) so that new member records persist across deployments.
+
+- **Automated Backup & Versioning**  
+  Implement an automated sync of member data and model artifacts back to the Hugging Face Hub or Git repository to ensure recoverability and track changes over time.
 
