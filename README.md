@@ -443,7 +443,7 @@ This repository is organized by functionality to streamline development, deploym
 - **`new_model.py`**  
   Flask application configured for GPU inference and model serving.
 
-## Future Implementation
+### Future Implementations
 
 - **Low‑Latency Webcam Streaming**  
   Replace the Twilio-based video feed with a lightweight, real‑time solution to eliminate startup delay and deliver an instant camera view.
