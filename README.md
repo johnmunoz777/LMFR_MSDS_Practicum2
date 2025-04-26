@@ -50,6 +50,7 @@ By implementing this solution, venues such as Costco and retail stores can have 
 <img src="images/cc.jpg" alt="john Example" width="950" height="600" /> <br>
 <img src="images/flowchart_hugging_face.png" alt="john Example" width="1000" height="600" />
 <br>
+![rs](images/flowchart_hugging_face.png) <br>
 <img src="images/tunnel_process.jpg" alt="Project" width="700" height="600" />
 <br>
 
