@@ -48,6 +48,8 @@ By implementing this solution, venues such as Costco and retail stores can have 
 
 ![rr](images/cc.jpg) <br>
 ![rs](images/new_flow.png) <br>
+<br>
+![Face-Rec App Flow](https://www.mermaidchart.com/raw/f1766b7a-7b4e-4bb2-8fae-23e0a7fe7d69?theme=light&version=v0.1&format=svg)<br>
 <img src="images/tunnel_process.jpg" alt="Project" width="700" height="600" />
 <br>
 
